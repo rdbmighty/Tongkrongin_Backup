@@ -27,10 +27,6 @@
         app:menu="@menu/bottom_navigation"
         />
 
-    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
-
-        />
-
 
 
 
