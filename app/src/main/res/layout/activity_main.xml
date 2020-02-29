@@ -19,9 +19,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@android:color/white"
-        app:itemIconTint="@android:color/holo_red_dark"
+
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+
         app:itemIconSize="30dp"
-        app:menu="@menu/bottom_navigation"/>
+        app:menu="@menu/bottom_navigation"
+        />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+
+        />
 
 
 
