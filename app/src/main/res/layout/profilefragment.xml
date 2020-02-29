@@ -40,14 +40,14 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/muke_gile"
         android:layout_marginTop="130dp"
-        android:background="@drawable/oval"
+        android:background="@drawable/box_modified"
         >
 
         <TextView
             android:id="@+id/email_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="60dp"
             android:layout_marginLeft="80dp"
             android:drawableLeft="@drawable/mail"
             android:textColor="@android:color/black"
@@ -73,9 +73,9 @@
 
         <Button
             android:id="@+id/btn_logout"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="100dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
             android:layout_below="@id/name_info"
             android:layout_centerHorizontal="true"
             android:background="@drawable/oval_button"
@@ -87,14 +87,40 @@
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/cardbox"
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="80dp"
-        android:background="@drawable/oval_abu"
+        android:background="@drawable/shadow"
+        android:elevation="21dp"
+        android:padding="20dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/muke_gile"
         android:layout_marginTop="85dp"
-
         >
+
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56 \nLikes"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="15dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 \nComment"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_toRightOf="@id/likes"
+            android:layout_marginLeft="45dp"
+            ></TextView>
+
     </RelativeLayout>
 
 
