@@ -2,11 +2,14 @@ package com.example.tongkrongin.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -15,7 +18,7 @@ import com.example.tongkrongin.R;
 public class LoginActivity extends AppCompatActivity {
 
     private RelativeLayout loginbox;
-
+    private ImageView logo;
     private EditText username,password;
     private Button login;
     private TextView register;
@@ -28,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        logo = (ImageView)findViewById(R.id.logo);
         loginbox = (RelativeLayout) findViewById(R.id.box);
         username = (EditText)findViewById(R.id.edt_username);
         password = (EditText)findViewById(R.id.edt_password);
@@ -67,7 +71,12 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void RegActivity(){
         Intent intent = new Intent(this,RegisterActivity.class);
-        startActivity(intent);
+        Pair[] pairs = new Pair[1];
+        pairs[0]=new Pair<View, String>(logo,"LogoTransition");
+
+        ActivityOptions option = ActivityOptions.makeSceneTransitionAnimation(this, pairs);
+
+        startActivity(intent,option.toBundle());
     }
 
 //    private void validate(String userName, String userPassword){
