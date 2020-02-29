@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <SearchView
+        android:id="@+id/search_lup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff8a8a"
+
+        />
+    <ScrollView
+        android:layout_below="@+id/search_lup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="490dp"
+                app:srcCompat="@drawable/gmbr5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="420dp"
+                app:srcCompat="@drawable/gmbr4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="434dp"
+                app:srcCompat="@drawable/gmbr3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="397dp"
+                app:srcCompat="@drawable/gmbr2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="388dp"
+                app:srcCompat="@drawable/gmbr1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
