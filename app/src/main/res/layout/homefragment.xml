@@ -14,42 +14,185 @@
         android:background="#ff8a8a"
 
         />
-    <ScrollView
-        android:layout_below="@+id/search_lup"
+
+    <HorizontalScrollView
+        android:id="@+id/scrollJajal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scroll1">
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_lup"
+        android:layout_marginTop="0dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="490dp"
-                app:srcCompat="@drawable/gmbr5" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="420dp"
-                app:srcCompat="@drawable/gmbr4" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="434dp"
-                app:srcCompat="@drawable/gmbr3" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="397dp"
-                app:srcCompat="@drawable/gmbr2" />
-
-            <ImageView
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="388dp"
-                app:srcCompat="@drawable/gmbr1" />
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/foto1" />
+
+                    <ImageView
+                        android:layout_width="458dp"
+                        android:layout_height="167dp"
+                        app:srcCompat="@drawable/expl1" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="511dp"
+                        android:layout_height="388dp"
+                        app:srcCompat="@drawable/foto2" />
+
+                    <ImageView
+                        android:layout_width="511dp"
+                        android:layout_height="185dp"
+                        app:srcCompat="@drawable/expl2" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="420dp"
+                        android:layout_height="288dp"
+                        app:srcCompat="@drawable/foto3" />
+
+                    <ImageView
+                        android:layout_width="422dp"
+                        android:layout_height="176dp"
+                        app:srcCompat="@drawable/expl3" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/foto4" />
+
+                    <ImageView
+                        android:layout_width="471dp"
+                        android:layout_height="201dp"
+                        app:srcCompat="@drawable/expl4" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="467dp"
+                        android:layout_height="380dp"
+                        app:srcCompat="@drawable/foto5" />
+
+                    <ImageView
+                        android:layout_width="467dp"
+                        android:layout_height="156dp"
+                        app:srcCompat="@drawable/expl5" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="405dp"
+                        android:layout_height="280dp"
+                        app:srcCompat="@drawable/foto6" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="158dp"
+                        app:srcCompat="@drawable/expl6" />
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+
+
+
+
+
 
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
+
+
+
+<!--        <ScrollView-->
+<!--        android:layout_below="@+id/search_lup"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/scroll1">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="490dp"-->
+<!--                app:srcCompat="@drawable/gmbr5" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="420dp"-->
+<!--                app:srcCompat="@drawable/gmbr4" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="434dp"-->
+<!--                app:srcCompat="@drawable/gmbr3" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="397dp"-->
+<!--                app:srcCompat="@drawable/gmbr2" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="388dp"-->
+<!--                app:srcCompat="@drawable/gmbr1" />-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
 
 </RelativeLayout>
